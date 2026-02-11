@@ -113,12 +113,16 @@
     gap: 50px;
 
  }
- /* Home */
+
+
+                 /* Home */
  .bungkus-home{
+    margin-top: 60px;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 340px;
     min-height: 500px;
+    margin-bottom: 400px;
  }
 .bungkus-homekiri{ 
     font-family: var(--ff);
@@ -141,7 +145,8 @@
 .content-home{
     padding-top:10px ;
     color: var(--white);
-    width: 60%;
+    width: 50%;
+    font-size: 20px;
 }
 
 .bungkus-buttonhome{
@@ -160,11 +165,12 @@
     background-color: transparent;
     border: solid 1px var(--glow-cyan);
     color: #ffffff;
-    width: 100px;
+    width: 120px;
     height: 20px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .cv-home{
@@ -184,16 +190,97 @@
     font-weight: 600;
     margin-top: 18px;
 
-
-
 }
+.cv-text{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hireme-text{
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .foto-kanan{
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background: linear-gradient(135deg, rgba(11,37,69,0.9), rgba(2,6,23,0.9));
 }
+
+
+                              /* ABOUT ME */
+
+
+.bungkus-about{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+
+
+}
+
+.title-about{ 
+    color: var(--white);
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
+
+}
+
+.bungkus-contenthomeabout{
+    display: grid;
+
+
+}
+
+.content-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    font-family: var(--ff);
+    font-size: 18px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    flex-direction: column;
+    margin-left: 0;
+    
+    
+
+
+
+}
+
+.text-about{
+    color: var(--white);
+
+}
+
+
+
+
+
+
 </style>
+
+
+
+
+
 <body>
     <!-- Navbar -->
    <header class="bungkus-navbar">
@@ -246,24 +333,38 @@
             <p class="content-home">I create beutiful, function, and user-centerd digital experiences. This my First Website btw, I'll bring ideas to life through clean code and thoughtful design</p>
             <div class="bungkus-buttonhome">
                  <div class="hireme-home">
-                Hire Me
+                <a class="hireme-text" target="_blank">Hire Me</a>
                  </div>
-                <div class="cv-home">Download CV</div>
+                <div class="cv-home"><a class="cv-text" href="" target="_blank">Download CV</a></div>
             </div>
         </div>
 
         <!-- foto kanan -->
-         <div class="foto-kanan"></div>
+         <div class="foto-kanan"> im</div>
 
      </section>
     <!-- About Me -->
-     <div>
-     <h3>About <span>Me</span> </h3>
+     <div class="bungkus-about">
+     <div class="title-about">
+     <h3>About <span style="color: var(--glow-cyan); text-shadow: 0 0 20px rgba(0, 187, 255, 0.5),0 0 40px rgba(0, 187, 255, 0.3),0 0 60px rgba(0, 187, 255, 0.1)";>Me</span> </h3>
      </div>
-     <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-     </div>
+     <div class="bungkus-contentabout">
+     <div class="content-about">
+        <p class="text-about">Hi! I'm Ridho Tri Pangestu, a passionate UI/UX Designer and Frontend Developer based in Indonesia.</p><br>
+        <p class="text-about">I'm currently a second-semester Information Systems student at UIN Syarif Hidayatullah Jakarta, where I've developed a strong interest in creating intuitive and visually engaging digital experiences. </p><br>
+        <p class="text-about"> I believe great design is where aesthetics meet functionality, and I'm dedicated to crafting user interfaces that are both beautiful and user-friendly.
+                               My focus is on modern web design, responsive layouts, and interactive experiences that make a lasting impact. I enjoy the entire process—from wireframing and prototyping to bringing designs to life through code.
+                               Right now, I'm improving my skills in:</p>
+<ul>
+    <li>>Figma for UI/UX design and prototyping</li>
+    <li>HTML, CSS, JavaScript, and React for frontend development</li>
+    <li>Building personal projects and exploring emerging web technologies to continuously grow my portfolio</li>
+</ul>
 
+      <p class="text-about"> I'm always eager to learn, collaborate, and take on new challenges that push my creative and technical boundaries.</p>
+     </div>
+     </div>
+</div>
      <!-- Table Project -->
       <div class="bungkus project" >
         <div class="gridproject">
